@@ -1,3 +1,59 @@
+# User Book App
+
+A NestJS-based API for managing users and books. This project follows the modular structure of NestJS and demonstrates the use of controllers, services, DTOs, and entities.
+
+## Features
+- **User Management**: Create, update, delete, and retrieve users.
+- **Book Management**: Add, update, delete, and list books.
+- **Modular Architecture**: Organized using feature-based modules.
+- **TypeScript Support**: Fully written in TypeScript.
+- **RESTful API**: Follows REST principles for structured API design.
+
+## Installation
+
+1. Clone the repository:
+   ``` sh
+   git clone https://github.com/your-username/user-book-app.git
+   cd user-book-app
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Run the application:
+   ```sh
+   npm run start
+   ```
+
+   - Run in watch mode: `npm run start:dev`
+   - Run in production: `npm run start:prod`
+
+## API Endpoints
+
+### Users
+| Method | Endpoint     | Description       |
+| ------ | ------------ | ----------------- |
+| GET    | `/users`     | Get all users     |
+| POST   | `/users`     | Create a new user |
+| PATCH  | `/users/:id` | Update a user     |
+| DELETE | `/users/:id` | Delete a user     |
+
+### Books
+| Method | Endpoint     | Description    |
+| ------ | ------------ | -------------- |
+| GET    | `/books`     | Get all books  |
+| POST   | `/books`     | Add a new book |
+| PATCH  | `/books/:id` | Update a book  |
+| DELETE | `/books/:id` | Delete a book  |
+
+## Technologies Used
+- **NestJS** - Framework for scalable Node.js applications
+- **TypeScript** - Typed JavaScript for better code quality
+- **Node.js** - Runtime environment
+- **ESLint** - Code linting and formatting
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
@@ -24,25 +80,6 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Project setup
-
-```bash
-$ npm install
-```
-
-## Compile and run the project
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
 
 ## Run tests
 
